@@ -1,0 +1,84 @@
+/* html will change the whole style inside html tag*/
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header>h1{
+    font-weight: 400;
+} 
+
+header{
+    /*it arranges the children element to the side of parent*/
+    display:flex;   
+    /*it is used to justify the content by spacing in different ways*/ 
+    justify-content: space-between;   
+    margin:0 3rem; 
+}
+
+
+li{
+    /* it is used to remove the bullets */
+    list-style: none;
+    /* 1 rem = 16 px*/
+    /*16 px is the default size of font in html*/
+    font-size: 1.5rem;
+}
+
+/*it is given a particular width bcz it is confined to the size 
+required for list elements only so space-between will not work
+then */
+
+nav{
+    width: 22rem;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between; 
+}
+nav{
+    position:relative;
+    top:1rem;
+}
+
+.showcase_img{
+    
+    /* means the img will take 95% of the screens whether the 
+    screen is minimized or enlarged */
+    /* means it is responsive to the screen*/
+    width: 95vw; /*vw=view width*/
+    margin:1rem;
+}
+article{
+    display:flex;
+}
+.container{
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+
+}
+
+p{
+    font-size: 1.5rem;
+}
+footer{
+    color:white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    height:4rem;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    /* it removes underline from the part in anchor tag */
+}
+
+/* it is used to hover over the text */
+a:hover{ 
+    color:red;
+    /* when we hover over the text, color will appear red */
+}
